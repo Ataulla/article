@@ -1,0 +1,7 @@
+{% if output %}
+    <h1>{{output.title}}</h1>
+    <h2>{{output.publication_date}} |</h2><h3>{{output.author}}</h3>
+    <p>{{output.body_text}}</p>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}

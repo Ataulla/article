@@ -1,0 +1,14 @@
+{% if output %}
+    <h1>top 10 articles</h1>
+    <ul tyep="square">
+    <ol start="1">
+    {% for art in output %}
+        <li><h1><a href="/details/{{ art.id }}/">{{ art.title }}</a></h1></li>
+        <p>{{art.body_text}}<p>
+    {% endfor %}
+    </ul>
+    </ol>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
+
